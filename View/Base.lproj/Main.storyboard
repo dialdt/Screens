@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="spq-7v-PfA">
+            <objects>
+                <viewController id="LiV-iX-3al" customClass="ViewController" customModule="Screens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hz7-IC-Sgx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SxZ-Sv-AnO" userLabel="Top View">
+                                <rect key="frame" x="10" y="20" width="394" height="138"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99:99:99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="Q3y-2H-s8u">
+                                        <rect key="frame" x="80.333333333333329" y="33.666666666666657" width="233.66666666666669" height="71"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="60"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1137254902" green="0.81960784310000001" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Q3y-2H-s8u" firstAttribute="centerY" secondItem="SxZ-Sv-AnO" secondAttribute="centerY" id="6BV-EU-hnF"/>
+                                    <constraint firstItem="Q3y-2H-s8u" firstAttribute="centerX" secondItem="SxZ-Sv-AnO" secondAttribute="centerX" id="BnN-N9-9ul"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1f1-Yh-Cu7">
+                                <rect key="frame" x="30" y="158" width="354" height="420"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="9zk-b6-0wf">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="s0P-9X-A8d">
+                                                <rect key="frame" x="0.0" y="0.0" width="60.666666666666664" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="1" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNc-ol-le0">
+                                                <rect key="frame" x="77.666666666666671" y="0.0" width="60.666666666666671" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addSubtractTimeButtons:" destination="LiV-iX-3al" eventType="touchUpInside" id="eeO-ow-wvi"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999 mins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="sbv-1T-gSQ">
+                                                <rect key="frame" x="155.33333333333334" y="0.0" width="121.00000000000003" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hR7-wx-mtm">
+                                                <rect key="frame" x="293.33333333333331" y="0.0" width="60.666666666666686" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addSubtractTimeButtons:" destination="LiV-iX-3al" eventType="touchUpInside" id="pE7-9U-tL2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="sNc-ol-le0" firstAttribute="width" secondItem="s0P-9X-A8d" secondAttribute="width" id="DH3-vE-PWP"/>
+                                            <constraint firstItem="hR7-wx-mtm" firstAttribute="width" secondItem="sNc-ol-le0" secondAttribute="width" id="GVD-9S-0hs"/>
+                                            <constraint firstItem="sbv-1T-gSQ" firstAttribute="width" secondItem="sNc-ol-le0" secondAttribute="width" multiplier="2:1" id="X2g-H2-N8M"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Mxi-Oz-91m">
+                                        <rect key="frame" x="0.0" y="60" width="354" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="vs9-hi-J7x">
+                                                <rect key="frame" x="0.0" y="0.0" width="56.333333333333336" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="2" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gZ-m9-P8g">
+                                                <rect key="frame" x="80.333333333333329" y="0.0" width="56.333333333333329" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addSubtractTimeButtons:" destination="LiV-iX-3al" eventType="touchUpInside" id="E1P-h4-r9I"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999 mins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="NQF-tu-yn8">
+                                                <rect key="frame" x="160.66666666666666" y="0.0" width="112.99999999999997" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tqs-gG-3kY">
+                                                <rect key="frame" x="297.66666666666669" y="0.0" width="56.333333333333314" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="addSubtractTimeButtons:" destination="LiV-iX-3al" eventType="touchUpInside" id="aeb-IV-KDI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="NQF-tu-yn8" firstAttribute="width" secondItem="9gZ-m9-P8g" secondAttribute="width" multiplier="2:1" id="2sm-nI-8Vh"/>
+                                            <constraint firstItem="tqs-gG-3kY" firstAttribute="width" secondItem="9gZ-m9-P8g" secondAttribute="width" id="bin-FV-HQT"/>
+                                            <constraint firstItem="9gZ-m9-P8g" firstAttribute="width" secondItem="vs9-hi-J7x" secondAttribute="width" id="ty1-Sy-GhV"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="0Vg-Aw-PYM">
+                                        <rect key="frame" x="0.0" y="120" width="354" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="pMu-at-8cb">
+                                                <rect key="frame" x="0.0" y="0.0" width="56.333333333333336" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjy-1V-Wg8">
+                                                <rect key="frame" x="80.333333333333329" y="0.0" width="56.333333333333329" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="addSubtractTimeButtons:" destination="LiV-iX-3al" eventType="touchUpInside" id="ggR-9W-AJc"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999 mins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="p7P-Eo-zsh">
+                                                <rect key="frame" x="160.66666666666666" y="0.0" width="112.99999999999997" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IjR-KS-vP8">
+                                                <rect key="frame" x="297.66666666666669" y="0.0" width="56.333333333333314" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="addSubtractTimeButtons:" destination="LiV-iX-3al" eventType="touchUpInside" id="7jM-D5-5dh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="p7P-Eo-zsh" firstAttribute="width" secondItem="bjy-1V-Wg8" secondAttribute="width" multiplier="2:1" id="3Uk-DU-coz"/>
+                                            <constraint firstItem="IjR-KS-vP8" firstAttribute="width" secondItem="bjy-1V-Wg8" secondAttribute="width" id="RFO-Pk-ajU"/>
+                                            <constraint firstItem="bjy-1V-Wg8" firstAttribute="width" secondItem="pMu-at-8cb" secondAttribute="width" id="hQR-fv-u4r"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="oHz-ji-jEc">
+                                        <rect key="frame" x="0.0" y="180" width="354" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="HQy-w0-cSE">
+                                                <rect key="frame" x="0.0" y="0.0" width="56.333333333333336" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46d-NK-XSe">
+                                                <rect key="frame" x="80.333333333333329" y="0.0" width="56.333333333333329" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addSubtractTimeButtons:" destination="LiV-iX-3al" eventType="touchUpInside" id="5Bl-nd-bjl"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999 mins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="eSg-7H-XS7">
+                                                <rect key="frame" x="160.66666666666666" y="0.0" width="112.99999999999997" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lei-DP-GSc">
+                                                <rect key="frame" x="297.66666666666669" y="0.0" width="56.333333333333314" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="addSubtractTimeButtons:" destination="LiV-iX-3al" eventType="touchUpInside" id="oKv-f5-0J0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="eSg-7H-XS7" firstAttribute="width" secondItem="46d-NK-XSe" secondAttribute="width" multiplier="2:1" id="Azc-ec-Qfq"/>
+                                            <constraint firstItem="lei-DP-GSc" firstAttribute="width" secondItem="46d-NK-XSe" secondAttribute="width" id="umu-Bm-KLU"/>
+                                            <constraint firstItem="46d-NK-XSe" firstAttribute="width" secondItem="HQy-w0-cSE" secondAttribute="width" id="ysF-kh-wLI"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="1Jh-fl-KOX">
+                                        <rect key="frame" x="0.0" y="240" width="354" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="gOO-Bs-Wke">
+                                                <rect key="frame" x="0.0" y="0.0" width="56.333333333333336" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLH-4J-jhR">
+                                                <rect key="frame" x="80.333333333333329" y="0.0" width="56.333333333333329" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addSubtractTimeButtons:" destination="LiV-iX-3al" eventType="touchUpInside" id="jhC-UO-IBb"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999 mins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="UxH-RG-g3f">
+                                                <rect key="frame" x="160.66666666666666" y="0.0" width="112.99999999999997" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="how-UR-jg2">
+                                                <rect key="frame" x="297.66666666666669" y="0.0" width="56.333333333333314" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="addSubtractTimeButtons:" destination="LiV-iX-3al" eventType="touchUpInside" id="5e4-rV-xXv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="yLH-4J-jhR" firstAttribute="width" secondItem="gOO-Bs-Wke" secondAttribute="width" id="5CL-JZ-Vyq"/>
+                                            <constraint firstItem="how-UR-jg2" firstAttribute="width" secondItem="yLH-4J-jhR" secondAttribute="width" id="YFr-3h-SEx"/>
+                                            <constraint firstItem="UxH-RG-g3f" firstAttribute="width" secondItem="yLH-4J-jhR" secondAttribute="width" multiplier="2:1" id="pSF-2w-fHG"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="ojt-4l-gsD">
+                                        <rect key="frame" x="0.0" y="300" width="354" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="345-bc-cb4">
+                                                <rect key="frame" x="0.0" y="0.0" width="56.333333333333336" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gx4-mq-DLu">
+                                                <rect key="frame" x="80.333333333333329" y="0.0" width="56.333333333333329" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addSubtractTimeButtons:" destination="LiV-iX-3al" eventType="touchUpInside" id="rKz-jS-Pcp"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999 mins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="vvf-2e-0ih">
+                                                <rect key="frame" x="160.66666666666666" y="0.0" width="112.99999999999997" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3X-ET-9DN">
+                                                <rect key="frame" x="297.66666666666669" y="0.0" width="56.333333333333314" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="addSubtractTimeButtons:" destination="LiV-iX-3al" eventType="touchUpInside" id="Cb5-6q-GP7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gx4-mq-DLu" firstAttribute="width" secondItem="345-bc-cb4" secondAttribute="width" id="33K-6R-N0U"/>
+                                            <constraint firstItem="vvf-2e-0ih" firstAttribute="width" secondItem="gx4-mq-DLu" secondAttribute="width" multiplier="2:1" id="E9p-Gv-9Qk"/>
+                                            <constraint firstItem="P3X-ET-9DN" firstAttribute="width" secondItem="gx4-mq-DLu" secondAttribute="width" id="aai-xz-ZWX"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Yvu-eb-y9F">
+                                        <rect key="frame" x="0.0" y="360" width="354" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ako-2y-M6V">
+                                                <rect key="frame" x="0.0" y="0.0" width="56.333333333333336" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Bp-38-wcj">
+                                                <rect key="frame" x="80.333333333333329" y="0.0" width="56.333333333333329" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="addSubtractTimeButtons:" destination="LiV-iX-3al" eventType="touchUpInside" id="NN1-Hc-ZCw"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999 mins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="lwL-8a-SwA">
+                                                <rect key="frame" x="160.66666666666666" y="0.0" width="112.99999999999997" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtr-ct-xqZ">
+                                                <rect key="frame" x="297.66666666666669" y="0.0" width="56.333333333333314" height="60"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="addSubtractTimeButtons:" destination="LiV-iX-3al" eventType="touchUpInside" id="jHy-9a-KCI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6Bp-38-wcj" firstAttribute="width" secondItem="ako-2y-M6V" secondAttribute="width" id="2R6-uW-Ix3"/>
+                                            <constraint firstItem="Qtr-ct-xqZ" firstAttribute="width" secondItem="6Bp-38-wcj" secondAttribute="width" id="PAZ-wm-Far"/>
+                                            <constraint firstItem="lwL-8a-SwA" firstAttribute="width" secondItem="6Bp-38-wcj" secondAttribute="width" multiplier="2:1" id="eG7-9R-Lgb"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4KJ-Uc-V0F" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="578" width="414" height="158"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yja-GX-rDl">
+                                        <rect key="frame" x="0.0" y="78" width="414" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhY-Ey-tOq">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="80"/>
+                                                <color key="backgroundColor" red="0.16078431372549018" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                                <state key="normal" title="Start Timer">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="summaryButton:" destination="aqR-Ys-Ai9" eventType="touchUpInside" id="NGD-ol-ZyR"/>
+                                                    <action selector="timerButton:" destination="LiV-iX-3al" eventType="touchUpInside" id="Xm4-qV-jEx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyd-gK-O2f">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="80"/>
+                                                <color key="backgroundColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="25"/>
+                                                <state key="normal" title="Reset">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="resetButton:" destination="LiV-iX-3al" eventType="touchUpInside" id="j5S-Q5-xpr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="QID-Be-JRu"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.11372549019607843" green="0.81960784313725488" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="yja-GX-rDl" firstAttribute="leading" secondItem="4KJ-Uc-V0F" secondAttribute="leading" id="Nce-ch-zHJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="yja-GX-rDl" secondAttribute="trailing" id="qaP-TR-dnZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="yja-GX-rDl" secondAttribute="bottom" id="rs6-LP-zq3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11372549019607843" green="0.81960784313725488" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1f1-Yh-Cu7" firstAttribute="centerX" secondItem="hz7-IC-Sgx" secondAttribute="centerX" id="1xc-9O-Bna"/>
+                            <constraint firstItem="SxZ-Sv-AnO" firstAttribute="top" secondItem="hz7-IC-Sgx" secondAttribute="top" constant="20" id="AkX-xp-KB5"/>
+                            <constraint firstItem="4KJ-Uc-V0F" firstAttribute="top" secondItem="1f1-Yh-Cu7" secondAttribute="bottom" id="Aqq-Ll-fJn"/>
+                            <constraint firstAttribute="trailing" secondItem="4KJ-Uc-V0F" secondAttribute="trailing" id="DQ1-E2-0FW"/>
+                            <constraint firstItem="1f1-Yh-Cu7" firstAttribute="top" secondItem="SxZ-Sv-AnO" secondAttribute="bottom" id="FzO-0l-AwC"/>
+                            <constraint firstItem="SxZ-Sv-AnO" firstAttribute="leading" secondItem="hz7-IC-Sgx" secondAttribute="leading" constant="10" id="R1J-v6-460"/>
+                            <constraint firstItem="1f1-Yh-Cu7" firstAttribute="leading" secondItem="hz7-IC-Sgx" secondAttribute="leadingMargin" constant="10" id="U4t-K8-mJD"/>
+                            <constraint firstAttribute="bottom" secondItem="4KJ-Uc-V0F" secondAttribute="bottom" id="YZj-1H-Qfu"/>
+                            <constraint firstAttribute="trailing" secondItem="SxZ-Sv-AnO" secondAttribute="trailing" constant="10" id="ebH-yd-oe5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1f1-Yh-Cu7" secondAttribute="trailing" constant="10" id="nCz-pc-1sr"/>
+                            <constraint firstItem="1f1-Yh-Cu7" firstAttribute="centerY" secondItem="hz7-IC-Sgx" secondAttribute="centerY" id="neb-j9-KFn"/>
+                            <constraint firstItem="1f1-Yh-Cu7" firstAttribute="top" secondItem="SxZ-Sv-AnO" secondAttribute="bottom" id="pPy-y4-nvL"/>
+                            <constraint firstItem="4KJ-Uc-V0F" firstAttribute="top" secondItem="1f1-Yh-Cu7" secondAttribute="bottom" id="pkf-uz-NWQ"/>
+                            <constraint firstItem="4KJ-Uc-V0F" firstAttribute="leading" secondItem="hz7-IC-Sgx" secondAttribute="leading" id="w0k-Oc-2TZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="POz-zp-JBT"/>
+                    </view>
+                    <connections>
+                        <outlet property="fridayTimeText" destination="UxH-RG-g3f" id="g71-i5-AfL"/>
+                        <outlet property="mondayTimeText" destination="sbv-1T-gSQ" id="M8S-1M-kZh"/>
+                        <outlet property="saturdayTimeText" destination="vvf-2e-0ih" id="M5f-x7-LVG"/>
+                        <outlet property="summaryTimeText" destination="Q3y-2H-s8u" id="haG-T9-BXc"/>
+                        <outlet property="sundayTimeText" destination="lwL-8a-SwA" id="wch-Bh-zNc"/>
+                        <outlet property="thursdayTimeText" destination="eSg-7H-XS7" id="dYK-xi-8fc"/>
+                        <outlet property="timerButton" destination="OhY-Ey-tOq" id="Eae-Yt-fvX"/>
+                        <outlet property="tuesdayTimeText" destination="NQF-tu-yn8" id="Tp2-KA-f6L"/>
+                        <outlet property="wednesdayTimeText" destination="p7P-Eo-zsh" id="Clq-ew-jNo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hYy-z7-MhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="aqR-Ys-Ai9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="251" y="81"/>
+        </scene>
+    </scenes>
+</document>
